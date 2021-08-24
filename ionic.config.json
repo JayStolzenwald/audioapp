@@ -1,0 +1,7 @@
+{
+  "name": "audiotetst",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

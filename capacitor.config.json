@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "audiotetst",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
