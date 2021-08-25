@@ -7,11 +7,17 @@ import { API } from 'aws-amplify';
 import { listNotes } from '../graphql/queries';
 import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from '../graphql/mutations';
 
+type Note = {
+    id: string
+    name: string
+    description?: string
+};
+
 const initialFormState = { name: '', description: '' }
 
 const Tab1: React.FC = () => {
 
-    const [notes, setNotes] = useState([]);
+    const [notes, setNotes] = useState([] as Note[]);
     const [formData, setFormData] = useState(initialFormState);
 
     useEffect(() => {
@@ -19,17 +25,30 @@ const Tab1: React.FC = () => {
     }, []);
 
     async function fetchNotes() {
-        const apiData = await API.graphql({ query: listNotes });
-        setNotes(apiData.data.listNotes.items);
+        const apiData = await (API.graphql({ query: listNotes }) as unknown) as {
+            data?: { listNotes: {items: any} };
+            errors?: [object];
+            extensions?: {
+                [key: string]: any;
+            };
+        };
+
+        // (API.graphql(graphqlOperation(createAttributeMutation, { input: payload })) as unknown) as {
+        //     data: CreateAttributeMutation
+        // }
+        setNotes(apiData.data?.listNotes.items);
     }
 
     async function createNote() {
         if (!formData.name || !formData.description) return;
+        console.log("sending this to graph ql api");
+        console.log(formData);
         await API.graphql({ query: createNoteMutation, variables: { input: formData } });
-        setNotes([ ...notes, formData ]);
+        setNotes([ ...notes, { id: '', ...formData} ]);
         setFormData(initialFormState);
     }
 
+    // @ts-ignore
     async function deleteNote({ id }) {
         const newNotesArray = notes.filter(note => note.id !== id);
         setNotes(newNotesArray);

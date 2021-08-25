@@ -31,11 +31,11 @@
         "GraphQLAPIEndpointOutput": "https://siqmgn45wbd6jlxxy5pmho3ifa.appsync-api.eu-central-1.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-ekguwbxmnvcu3el52xx4uuvhh4"
       },
+      "lastPushTimeStamp": "2021-08-25T08:12:04.337Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyf5d0ec8695d94-staging-194337-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiaudioapp"
       },
-      "lastPushTimeStamp": "2021-08-25T07:11:59.870Z",
       "lastPushDirHash": "xNY8oBY/fMAbOXq+uFXO0TLlyLw="
     }
   }
