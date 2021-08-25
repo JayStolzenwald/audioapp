@@ -11,5 +11,32 @@
       "StackId": "arn:aws:cloudformation:eu-central-1:530798195059:stack/amplify-amplifyf5d0ec8695d94-staging-194337/9343e2e0-0513-11ec-8043-0a0093447fa4",
       "AmplifyAppId": "d1gum33swrtir3"
     }
+  },
+  "api": {
+    "audioapp": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": "audiotest"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "izb4p3qiyfekhcgmdr7lsg6ora",
+        "GraphQLAPIEndpointOutput": "https://siqmgn45wbd6jlxxy5pmho3ifa.appsync-api.eu-central-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-ekguwbxmnvcu3el52xx4uuvhh4"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyf5d0ec8695d94-staging-194337-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiaudioapp"
+      },
+      "lastPushTimeStamp": "2021-08-25T07:11:59.870Z",
+      "lastPushDirHash": "xNY8oBY/fMAbOXq+uFXO0TLlyLw="
+    }
   }
 }
