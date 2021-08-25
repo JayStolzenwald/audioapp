@@ -31,12 +31,67 @@
         "GraphQLAPIEndpointOutput": "https://siqmgn45wbd6jlxxy5pmho3ifa.appsync-api.eu-central-1.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-ekguwbxmnvcu3el52xx4uuvhh4"
       },
-      "lastPushTimeStamp": "2021-08-25T08:12:04.337Z",
+      "lastPushTimeStamp": "2021-08-25T14:39:14.264Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyf5d0ec8695d94-staging-194337-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiaudioapp"
       },
       "lastPushDirHash": "xNY8oBY/fMAbOXq+uFXO0TLlyLw="
+    }
+  },
+  "auth": {
+    "audioapp240c48c8": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "loginMechanism": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyf5d0ec8695d94-staging-194337-deployment/amplify-cfn-templates/auth/audioapp240c48c8-cloudformation-template.yml",
+        "logicalId": "authaudioapp240c48c8"
+      },
+      "lastPushTimeStamp": "2021-08-25T14:39:14.287Z",
+      "output": {
+        "UserPoolId": "eu-central-1_iRA8XLI9y",
+        "AppClientIDWeb": "53949kmnjkvfvi2q58pfh4fr9b",
+        "AppClientID": "rn83uqhef8p7q5ckqj1tk6ma3",
+        "IdentityPoolId": "eu-central-1:0599b253-e9ae-4636-b8bb-7c59e592f19e",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-central-1:530798195059:userpool/eu-central-1_iRA8XLI9y",
+        "IdentityPoolName": "audioapp240c48c8_identitypool_240c48c8__staging",
+        "UserPoolName": "audioapp240c48c8_userpool_240c48c8"
+      },
+      "lastPushDirHash": "/HXz9Wm53od8VzgHLphcB9Fevw8="
+    }
+  },
+  "storage": {
+    "audioappstolzenj": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyf5d0ec8695d94-staging-194337-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageaudioappstolzenj"
+      },
+      "lastPushTimeStamp": "2021-08-25T14:39:14.287Z",
+      "output": {
+        "BucketName": "audioapp-stolzenj194337-staging",
+        "Region": "eu-central-1"
+      },
+      "lastPushDirHash": "fXsQGsdELNIC7ve+iM5/UP/TCxc="
     }
   }
 }

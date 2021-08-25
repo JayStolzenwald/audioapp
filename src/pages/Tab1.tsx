@@ -32,10 +32,6 @@ const Tab1: React.FC = () => {
                 [key: string]: any;
             };
         };
-
-        // (API.graphql(graphqlOperation(createAttributeMutation, { input: payload })) as unknown) as {
-        //     data: CreateAttributeMutation
-        // }
         setNotes(apiData.data?.listNotes.items);
     }
 
