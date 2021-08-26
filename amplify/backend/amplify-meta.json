@@ -31,12 +31,12 @@
         "GraphQLAPIEndpointOutput": "https://siqmgn45wbd6jlxxy5pmho3ifa.appsync-api.eu-central-1.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-ekguwbxmnvcu3el52xx4uuvhh4"
       },
-      "lastPushTimeStamp": "2021-08-25T14:39:14.264Z",
+      "lastPushTimeStamp": "2021-08-26T07:12:20.262Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyf5d0ec8695d94-staging-194337-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiaudioapp"
       },
-      "lastPushDirHash": "xNY8oBY/fMAbOXq+uFXO0TLlyLw="
+      "lastPushDirHash": "qgirSWSPKJdAeR+6xzi0Z1EHGXI="
     }
   },
   "auth": {
@@ -65,7 +65,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyf5d0ec8695d94-staging-194337-deployment/amplify-cfn-templates/auth/audioapp240c48c8-cloudformation-template.yml",
         "logicalId": "authaudioapp240c48c8"
       },
-      "lastPushTimeStamp": "2021-08-25T14:39:14.287Z",
+      "lastPushTimeStamp": "2021-08-26T07:12:17.458Z",
       "output": {
         "UserPoolId": "eu-central-1_iRA8XLI9y",
         "AppClientIDWeb": "53949kmnjkvfvi2q58pfh4fr9b",
@@ -86,7 +86,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyf5d0ec8695d94-staging-194337-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
         "logicalId": "storageaudioappstolzenj"
       },
-      "lastPushTimeStamp": "2021-08-25T14:39:14.287Z",
+      "lastPushTimeStamp": "2021-08-26T07:12:17.458Z",
       "output": {
         "BucketName": "audioapp-stolzenj194337-staging",
         "Region": "eu-central-1"
